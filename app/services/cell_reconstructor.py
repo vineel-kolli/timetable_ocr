@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass
 from typing import Any
 
@@ -6,38 +5,16 @@ from app.services.grid_detector import GridDetection
 
 
 @dataclass(frozen=True)
-class PeriodColumn:
-    """Maps an image column interval to a timetable period."""
-
-    period: int
-    left: int
-    right: int
-
-
-@dataclass(frozen=True)
 class CellReconstructionConfig:
     """
     Configuration for mapping detected grid cells to periods.
 
-    These column mappings describe the current benchmark timetable.
-    They are configurable because different timetable layouts may
-    have different numbers of periods or lunch positions.
+    Period positions are not hard-coded in pixels. They are read from
+    the period numbers printed in the timetable header row, so the
+    same logic works for different image sizes and layouts.
     """
 
-    period_columns: tuple[PeriodColumn, ...] = (
-        PeriodColumn(1, 71, 125),
-        PeriodColumn(2, 125, 179),
-        PeriodColumn(3, 179, 255),
-        PeriodColumn(4, 255, 310),
-        PeriodColumn(5, 343, 402),
-        PeriodColumn(6, 402, 456),
-        PeriodColumn(7, 456, 511),
-        PeriodColumn(8, 511, 568),
-        PeriodColumn(9, 568, 636),
-    )
-
-    day_column_right: int = 71
-    lunch_region: tuple[int, int] = (310, 343)
+    valid_periods: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 
 class CellReconstructionError(Exception):
@@ -68,20 +45,79 @@ def _validate_ocr_data(ocr_data: dict[str, Any]) -> None:
         )
 
 
+def _detect_period_centers(
+    ocr_data: dict[str, Any],
+    header_bottom: int,
+    config: CellReconstructionConfig,
+) -> dict[int, float]:
+    """Find the x-center of each period number printed in the header row."""
+
+    centers: dict[int, tuple[float, float]] = {}  # period -> (x, score)
+    valid = set(config.valid_periods)
+
+    for text, score, box in zip(
+        ocr_data["rec_texts"],
+        ocr_data["rec_scores"],
+        ocr_data["rec_boxes"],
+    ):
+        text = str(text).strip()
+
+        if not text.isdigit() or int(text) not in valid:
+            continue
+
+        if len(box) != 4:
+            continue
+
+        x1, y1, x2, y2 = map(float, box)
+
+        # Digits below the header belong to body rows, not the header.
+        if (y1 + y2) / 2 >= header_bottom:
+            continue
+
+        period = int(text)
+
+        # Keep the highest-confidence reading if a digit appears twice.
+        if period not in centers or score > centers[period][1]:
+            centers[period] = ((x1 + x2) / 2, float(score))
+
+    result = {period: x for period, (x, _) in centers.items()}
+
+    missing = sorted(valid - set(result))
+    if missing:
+        raise CellReconstructionError(
+            "Could not read all period numbers from the header row. "
+            f"Missing: {missing}"
+        )
+
+    # Period numbers must increase from left to right.
+    ordered = [result[period] for period in sorted(result)]
+    if ordered != sorted(ordered):
+        raise CellReconstructionError(
+            "Period numbers in the header row are not in left-to-right order."
+        )
+
+    return result
+
+
 def _period_span(
     left: int,
     right: int,
-    period_columns: tuple[PeriodColumn, ...],
+    period_centers: dict[int, float],
 ) -> tuple[int, int] | None:
-    """Find all timetable periods overlapped by a grid cell."""
+    """
+    Find the periods covered by a grid cell.
 
-    occupied = []
+    A period belongs to a cell only if the center of its header digit
+    lies inside the cell. Each digit therefore belongs to exactly one
+    cell, so spans cannot overlap. Cells with no digit (the day column,
+    the lunch column) are skipped.
+    """
 
-    for column in period_columns:
-        overlap = min(right, column.right) - max(left, column.left)
-
-        if overlap > 0:
-            occupied.append(column.period)
+    occupied = [
+        period
+        for period, center in period_centers.items()
+        if left <= center < right
+    ]
 
     if not occupied:
         return None
@@ -149,42 +185,33 @@ def reconstruct_cells(
     """
     Reconstruct timetable cells from grid geometry and OCR regions.
 
-    Each detected cell is mapped to one or more periods.
+    Each detected cell is mapped to one or more periods using the
+    positions of the period numbers in the header row.
     Empty cells are retained in the output.
     """
 
     _validate_ocr_data(ocr_data)
 
-    if not grid.header_boundaries:
-        raise CellReconstructionError(
-            "Grid has no reference header boundaries."
-        )
+    if len(grid.horizontal_lines) < 2:
+        raise CellReconstructionError("Grid has no header row.")
+
+    header_bottom = grid.horizontal_lines[1]
+    period_centers = _detect_period_centers(
+        ocr_data,
+        header_bottom,
+        config,
+    )
 
     rows = []
 
     for row in grid.row_boundaries:
         boundaries = row["aligned_boundaries"]
-
         cells = []
 
         for left, right in zip(boundaries, boundaries[1:]):
+            span = _period_span(left, right, period_centers)
 
-            # Ignore the day-name column.
-            if right <= config.day_column_right:
-                continue
-
-            # Ignore the lunch column.
-            lunch_left, lunch_right = config.lunch_region
-
-            if left >= lunch_left and right <= lunch_right:
-                continue
-
-            span = _period_span(
-                left,
-                right,
-                config.period_columns,
-            )
-
+            # Day column, lunch column and thin slivers have no period.
             if span is None:
                 continue
 
@@ -226,6 +253,15 @@ def reconstruct_cells(
             })
 
         cells.sort(key=lambda cell: cell["start_period"])
+
+        # Safety check: periods within a row must never overlap.
+        for a, b in zip(cells, cells[1:]):
+            if a["end_period"] >= b["start_period"]:
+                raise CellReconstructionError(
+                    f"Row {row['row_index']}: overlapping periods "
+                    f"{a['start_period']}-{a['end_period']} and "
+                    f"{b['start_period']}-{b['end_period']}."
+                )
 
         rows.append({
             "row_index": row["row_index"],
