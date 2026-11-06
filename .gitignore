@@ -1,0 +1,61 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# PaddleOCR models and downloaded weights
+.paddlex/
+paddleocr/
+models/
+*.pdparams
+*.pdopt
+*.pdmodel
+*.pdiparams
+
+# Temporary files
+temp/
+tmp/
+uploads/
+outputs/
+
+# Testing
+.coverage
+htmlcov/
+
+# Gradio
+gradio_cached_examples/

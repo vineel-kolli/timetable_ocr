@@ -1,0 +1,704 @@
+{
+    "image_width": 640,
+    "image_height": 164,
+    "rows": [
+        {
+            "row_index": 0,
+            "y1": 18,
+            "y2": 39,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "text": "IOT(PSV) U-407",
+                    "confidence": 0.9513,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "IOT(PSV) U-407",
+                            "confidence": 0.9513,
+                            "box": {
+                                "x1": 87.0,
+                                "y1": 19.0,
+                                "x2": 162.0,
+                                "y2": 39.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 179,
+                        "y1": 18,
+                        "y2": 39
+                    }
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "text": "CN(PMOU) U-407",
+                    "confidence": 0.9941,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "CN(PMOU) U-407",
+                            "confidence": 0.9941,
+                            "box": {
+                                "x1": 203.0,
+                                "y1": 19.0,
+                                "x2": 285.0,
+                                "y2": 37.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 179,
+                        "x2": 310,
+                        "y1": 18,
+                        "y2": 39
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "text": "VDC(NA) U-405",
+                    "confidence": 0.9827,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "VDC(NA) U-405",
+                            "confidence": 0.9827,
+                            "box": {
+                                "x1": 364.0,
+                                "y1": 22.0,
+                                "x2": 435.0,
+                                "y2": 36.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 456,
+                        "y1": 18,
+                        "y2": 39
+                    }
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "text": "COUNSELLING",
+                    "confidence": 1.0,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "COUNSELLING",
+                            "confidence": 1.0,
+                            "box": {
+                                "x1": 471.0,
+                                "y1": 19.0,
+                                "x2": 553.0,
+                                "y2": 34.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 456,
+                        "x2": 568,
+                        "y1": 18,
+                        "y2": 39
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": "Sports/Yoga",
+                    "confidence": 1.0,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "Sports/Yoga",
+                            "confidence": 1.0,
+                            "box": {
+                                "x1": 570.0,
+                                "y1": 18.0,
+                                "x2": 634.0,
+                                "y2": 36.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 18,
+                        "y2": 39
+                    }
+                }
+            ]
+        },
+        {
+            "row_index": 1,
+            "y1": 39,
+            "y2": 61,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "text": "VDC(NA) U-407",
+                    "confidence": 0.9826,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "VDC(NA) U-407",
+                            "confidence": 0.9826,
+                            "box": {
+                                "x1": 88.0,
+                                "y1": 40.0,
+                                "x2": 162.0,
+                                "y2": 60.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 179,
+                        "y1": 39,
+                        "y2": 61
+                    }
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "text": "DWDM(KSR) U-407",
+                    "confidence": 0.9571,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "DWDM(KSR) U-407",
+                            "confidence": 0.9571,
+                            "box": {
+                                "x1": 199.0,
+                                "y1": 43.0,
+                                "x2": 292.0,
+                                "y2": 57.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 179,
+                        "x2": 310,
+                        "y1": 39,
+                        "y2": 61
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 8,
+                    "text": "FSD LAB (KVS,PMA,NP) LAB-1",
+                    "confidence": 0.985,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "FSD LAB (KVS,PMA,NP) LAB-1",
+                            "confidence": 0.985,
+                            "box": {
+                                "x1": 375.0,
+                                "y1": 42.0,
+                                "x2": 534.0,
+                                "y2": 56.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 568,
+                        "y1": 39,
+                        "y2": 61
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "Sports/Yoga",
+                            "confidence": 0.9999,
+                            "box": {
+                                "x1": 570.0,
+                                "y1": 40.0,
+                                "x2": 634.0,
+                                "y2": 57.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 39,
+                        "y2": 61
+                    }
+                }
+            ]
+        },
+        {
+            "row_index": 2,
+            "y1": 61,
+            "y2": 82,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "text": "OE-I",
+                    "confidence": 0.91,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "OE-I",
+                            "confidence": 0.91,
+                            "box": {
+                                "x1": 111.0,
+                                "y1": 64.0,
+                                "x2": 140.0,
+                                "y2": 80.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 179,
+                        "y1": 61,
+                        "y2": 82
+                    }
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "text": "SOFT SKILLS (PB) U-407",
+                    "confidence": 0.9752,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "SOFT SKILLS (PB) U-407",
+                            "confidence": 0.9752,
+                            "box": {
+                                "x1": 184.0,
+                                "y1": 64.0,
+                                "x2": 303.0,
+                                "y2": 78.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 179,
+                        "x2": 310,
+                        "y1": 61,
+                        "y2": 82
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "text": "DWDM(KSR) U-405",
+                    "confidence": 0.9613,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "DWDM(KSR) U-405",
+                            "confidence": 0.9613,
+                            "box": {
+                                "x1": 353.0,
+                                "y1": 65.0,
+                                "x2": 445.0,
+                                "y2": 79.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 456,
+                        "y1": 61,
+                        "y2": 82
+                    }
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "text": "T&P",
+                    "confidence": 0.9999,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "T&P",
+                            "confidence": 0.9999,
+                            "box": {
+                                "x1": 497.0,
+                                "y1": 63.0,
+                                "x2": 528.0,
+                                "y2": 78.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 456,
+                        "x2": 568,
+                        "y1": 61,
+                        "y2": 82
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "Sports/Yoga",
+                            "confidence": 0.9999,
+                            "box": {
+                                "x1": 570.0,
+                                "y1": 64.0,
+                                "x2": 633.0,
+                                "y2": 78.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 61,
+                        "y2": 82
+                    }
+                }
+            ]
+        },
+        {
+            "row_index": 3,
+            "y1": 82,
+            "y2": 103,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "text": "CN(PMOU) U-407",
+                    "confidence": 0.9814,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "CN(PMOU) U-407",
+                            "confidence": 0.9814,
+                            "box": {
+                                "x1": 86.0,
+                                "y1": 86.0,
+                                "x2": 167.0,
+                                "y2": 100.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 179,
+                        "y1": 82,
+                        "y2": 103
+                    }
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "text": "QA(BNB) U-407",
+                    "confidence": 0.9807,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "QA(BNB) U-407",
+                            "confidence": 0.9807,
+                            "box": {
+                                "x1": 209.0,
+                                "y1": 87.0,
+                                "x2": 280.0,
+                                "y2": 101.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 179,
+                        "x2": 310,
+                        "y1": 82,
+                        "y2": 103
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 8,
+                    "text": "DWDM LAB(KSR,PMA,SMK) LAB-1",
+                    "confidence": 0.9549,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "DWDM LAB(KSR,PMA,SMK) LAB-1",
+                            "confidence": 0.9549,
+                            "box": {
+                                "x1": 365.0,
+                                "y1": 83.0,
+                                "x2": 547.0,
+                                "y2": 102.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 568,
+                        "y1": 82,
+                        "y2": 103
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "Sports/Yoga",
+                            "confidence": 0.9999,
+                            "box": {
+                                "x1": 569.0,
+                                "y1": 84.0,
+                                "x2": 634.0,
+                                "y2": 101.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 82,
+                        "y2": 103
+                    }
+                }
+            ]
+        },
+        {
+            "row_index": 4,
+            "y1": 103,
+            "y2": 130,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 4,
+                    "text": "TINKERING LAB (NN,PSV,KVS) LAB-1",
+                    "confidence": 0.9789,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "TINKERING LAB (NN,PSV,KVS) LAB-1",
+                            "confidence": 0.9789,
+                            "box": {
+                                "x1": 97.0,
+                                "y1": 109.0,
+                                "x2": 284.0,
+                                "y2": 124.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 310,
+                        "y1": 103,
+                        "y2": 130
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "text": "OE-1",
+                    "confidence": 0.926,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "OE-1",
+                            "confidence": 0.926,
+                            "box": {
+                                "x1": 383.0,
+                                "y1": 109.0,
+                                "x2": 413.0,
+                                "y2": 125.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 456,
+                        "y1": 103,
+                        "y2": 130
+                    }
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "text": "T&P",
+                    "confidence": 0.9996,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "T&P",
+                            "confidence": 0.9996,
+                            "box": {
+                                "x1": 495.0,
+                                "y1": 108.0,
+                                "x2": 528.0,
+                                "y2": 125.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 456,
+                        "x2": 568,
+                        "y1": 103,
+                        "y2": 130
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": "Sports/Yoga",
+                    "confidence": 1.0,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "Sports/Yoga",
+                            "confidence": 1.0,
+                            "box": {
+                                "x1": 569.0,
+                                "y1": 108.0,
+                                "x2": 633.0,
+                                "y2": 125.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 103,
+                        "y2": 130
+                    }
+                }
+            ]
+        },
+        {
+            "row_index": 5,
+            "y1": 130,
+            "y2": 151,
+            "cells": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "text": "IOT(PSV) U-407",
+                    "confidence": 0.9624,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "IOT(PSV) U-407",
+                            "confidence": 0.9624,
+                            "box": {
+                                "x1": 86.0,
+                                "y1": 131.0,
+                                "x2": 163.0,
+                                "y2": 151.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 71,
+                        "x2": 179,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "text": "T&P",
+                    "confidence": 0.9996,
+                    "status": "recognized",
+                    "text_regions": [
+                        {
+                            "text": "T&P",
+                            "confidence": 0.9996,
+                            "box": {
+                                "x1": 230.0,
+                                "y1": 133.0,
+                                "x2": 260.0,
+                                "y2": 150.0
+                            }
+                        }
+                    ],
+                    "cell_bounds": {
+                        "x1": 179,
+                        "x2": 310,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "text": null,
+                    "confidence": null,
+                    "status": "empty",
+                    "text_regions": [],
+                    "cell_bounds": {
+                        "x1": 343,
+                        "x2": 456,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 7,
+                    "text": null,
+                    "confidence": null,
+                    "status": "empty",
+                    "text_regions": [],
+                    "cell_bounds": {
+                        "x1": 456,
+                        "x2": 511,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                },
+                {
+                    "start_period": 8,
+                    "end_period": 8,
+                    "text": null,
+                    "confidence": null,
+                    "status": "empty",
+                    "text_regions": [],
+                    "cell_bounds": {
+                        "x1": 511,
+                        "x2": 568,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "text": null,
+                    "confidence": null,
+                    "status": "empty",
+                    "text_regions": [],
+                    "cell_bounds": {
+                        "x1": 568,
+                        "x2": 636,
+                        "y1": 130,
+                        "y2": 151
+                    }
+                }
+            ]
+        }
+    ]
+}

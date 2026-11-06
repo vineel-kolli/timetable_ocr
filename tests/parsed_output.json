@@ -1,0 +1,349 @@
+{
+    "source": "PaddleOCR + OpenCV",
+    "image_width": 640,
+    "image_height": 164,
+    "rows": [
+        {
+            "row_index": 0,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "subject": "IOT",
+                    "faculty": [
+                        "PSV"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "IOT(PSV) U-407",
+                    "confidence": 0.9513,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "subject": "CN",
+                    "faculty": [
+                        "PMOU"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "CN(PMOU) U-407",
+                    "confidence": 0.9941,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "subject": "VDC",
+                    "faculty": [
+                        "NA"
+                    ],
+                    "classroom": "U-405",
+                    "original_text": "VDC(NA) U-405",
+                    "confidence": 0.9827,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "subject": "COUNSELLING",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "COUNSELLING",
+                    "confidence": 1.0,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": "Sports/Yoga",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "Sports/Yoga",
+                    "confidence": 1.0,
+                    "status": "recognized"
+                }
+            ]
+        },
+        {
+            "row_index": 1,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "subject": "VDC",
+                    "faculty": [
+                        "NA"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "VDC(NA) U-407",
+                    "confidence": 0.9826,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "subject": "DWDM",
+                    "faculty": [
+                        "KSR"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "DWDM(KSR) U-407",
+                    "confidence": 0.9571,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 8,
+                    "subject": "FSD LAB",
+                    "faculty": [
+                        "KVS",
+                        "PMA",
+                        "NP"
+                    ],
+                    "classroom": "LAB-1",
+                    "original_text": "FSD LAB (KVS,PMA,NP) LAB-1",
+                    "confidence": 0.985,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": "Sports/Yoga",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized"
+                }
+            ]
+        },
+        {
+            "row_index": 2,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "subject": "OE-I",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "OE-I",
+                    "confidence": 0.91,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "subject": "SOFT SKILLS",
+                    "faculty": [
+                        "PB"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "SOFT SKILLS (PB) U-407",
+                    "confidence": 0.9752,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "subject": "DWDM",
+                    "faculty": [
+                        "KSR"
+                    ],
+                    "classroom": "U-405",
+                    "original_text": "DWDM(KSR) U-405",
+                    "confidence": 0.9613,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "subject": "T&P",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "T&P",
+                    "confidence": 0.9999,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": "Sports/Yoga",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized"
+                }
+            ]
+        },
+        {
+            "row_index": 3,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "subject": "CN",
+                    "faculty": [
+                        "PMOU"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "CN(PMOU) U-407",
+                    "confidence": 0.9814,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "subject": "QA",
+                    "faculty": [
+                        "BNB"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "QA(BNB) U-407",
+                    "confidence": 0.9807,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 8,
+                    "subject": "DWDM LAB",
+                    "faculty": [
+                        "KSR",
+                        "PMA",
+                        "SMK"
+                    ],
+                    "classroom": "LAB-1",
+                    "original_text": "DWDM LAB(KSR,PMA,SMK) LAB-1",
+                    "confidence": 0.9549,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": "Sports/Yoga",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "Sports/Yoga",
+                    "confidence": 0.9999,
+                    "status": "recognized"
+                }
+            ]
+        },
+        {
+            "row_index": 4,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 4,
+                    "subject": "TINKERING LAB",
+                    "faculty": [
+                        "NN",
+                        "PSV",
+                        "KVS"
+                    ],
+                    "classroom": "LAB-1",
+                    "original_text": "TINKERING LAB (NN,PSV,KVS) LAB-1",
+                    "confidence": 0.9789,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "subject": "OE-1",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "OE-1",
+                    "confidence": 0.926,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 8,
+                    "subject": "T&P",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "T&P",
+                    "confidence": 0.9996,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": "Sports/Yoga",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "Sports/Yoga",
+                    "confidence": 1.0,
+                    "status": "recognized"
+                }
+            ]
+        },
+        {
+            "row_index": 5,
+            "entries": [
+                {
+                    "start_period": 1,
+                    "end_period": 2,
+                    "subject": "IOT",
+                    "faculty": [
+                        "PSV"
+                    ],
+                    "classroom": "U-407",
+                    "original_text": "IOT(PSV) U-407",
+                    "confidence": 0.9624,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 3,
+                    "end_period": 4,
+                    "subject": "T&P",
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": "T&P",
+                    "confidence": 0.9996,
+                    "status": "recognized"
+                },
+                {
+                    "start_period": 5,
+                    "end_period": 6,
+                    "subject": null,
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": null,
+                    "confidence": null,
+                    "status": "empty"
+                },
+                {
+                    "start_period": 7,
+                    "end_period": 7,
+                    "subject": null,
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": null,
+                    "confidence": null,
+                    "status": "empty"
+                },
+                {
+                    "start_period": 8,
+                    "end_period": 8,
+                    "subject": null,
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": null,
+                    "confidence": null,
+                    "status": "empty"
+                },
+                {
+                    "start_period": 9,
+                    "end_period": 9,
+                    "subject": null,
+                    "faculty": [],
+                    "classroom": null,
+                    "original_text": null,
+                    "confidence": null,
+                    "status": "empty"
+                }
+            ]
+        }
+    ]
+}
