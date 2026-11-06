@@ -1,5 +1,5 @@
 paddlepaddle==3.2.0
 paddleocr==3.7.0
-gradio==5.50.0
 numpy==2.3.5
 opencv-contrib-python==4.10.0.84
+streamlit==1.67.0
